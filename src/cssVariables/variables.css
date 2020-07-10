@@ -18,7 +18,7 @@
 
     /*shadows*/
     --post-content-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
-    --bar-box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    --box-shadow-bar: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 
     /*borders*/
     --tab-border: 3px solid #285473;

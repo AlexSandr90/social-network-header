@@ -10,7 +10,7 @@
     width: 100%;
     background-color: var(--post-content-bg-color);
     border-radius: 4px;
-    box-shadow: var(--bar-box-shadow);
+    box-shadow: var(--box-shadow-bar);
     padding: 10px 0;
 }
 
