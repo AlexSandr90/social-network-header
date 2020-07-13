@@ -10,7 +10,7 @@ const Content = (props) => {
     } = c;
 
     return (
-        <section className={ content }>
+        <section className={ content } >
             <Posts render={() => props.state.postData} />
         </section>
     )

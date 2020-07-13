@@ -10,9 +10,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
     Link,
-    BrowserRouter as Router,
-    Switch,
     Route,
+    Switch,
+    BrowserRouter as Router,
 } from "react-router-dom";
 
 import n from './navbar.module.css';
@@ -22,6 +22,45 @@ import Messages from "../../Messages";
 import Friends from "../../Friends";
 import Photos from "../../Photos";
 import Communities from "../../Communities";
+
+const routes = [
+    {
+        path: '/profile',
+        exact: true,
+        sidebar: null,
+        main: () => <Profile/>
+    },
+    {
+        path: '/news',
+        exact: true,
+        sidebar: null,
+        main: () => <News/>
+    },
+    {
+        path: '/messages',
+        exact: true,
+        sidebar: null,
+        main: () => <Messages/>
+    },
+    {
+        path: '/friends',
+        exact: true,
+        sidebar: null,
+        main: () => <Friends/>
+    },
+    {
+        path: '/photos',
+        exact: true,
+        sidebar: null,
+        main: () => <Photos/>
+    },
+    {
+        path: '/communities',
+        exact: true,
+        sidebar: null,
+        main: () => <Communities/>
+    },
+];
 
 const Navbar = () => {
 
@@ -39,9 +78,7 @@ const Navbar = () => {
             <Router>
                 <ul className={items}>
                     <li className={item}>
-                        <Link className={link}
-                              to='/profile'
-                        >
+                        <Link className={link} to='/profile' >
                             <FontAwesomeIcon icon={faHome} className={icon}/>
                             <span className={itemText}>
                             My Page
@@ -88,26 +125,6 @@ const Navbar = () => {
                             </span>
                         </Link>
                     </li>
-                    {/*<Switch>*/}
-                    {/*    <Route path='/profile'>*/}
-                    {/*        <Profile/>*/}
-                    {/*    </Route>*/}
-                    {/*    <Route path='/news'>*/}
-                    {/*        <News/>*/}
-                    {/*    </Route>*/}
-                    {/*    <Route path='/messages'>*/}
-                    {/*        <Messages/>*/}
-                    {/*    </Route>*/}
-                    {/*    <Route path='/friends'>*/}
-                    {/*        <Friends/>*/}
-                    {/*    </Route>*/}
-                    {/*    <Route path='/photos'>*/}
-                    {/*        <Photos/>*/}
-                    {/*    </Route>*/}
-                    {/*    <Route path='/communities'>*/}
-                    {/*        <Communities/>*/}
-                    {/*    </Route>*/}
-                    {/*</Switch>*/}
                 </ul>
             </Router>
         </aside>

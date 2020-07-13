@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import Content from "./content/Content";
 import RightBar from "./rightBar";
 
+
 const MainContent = props => {
 
     const {
@@ -13,9 +14,9 @@ const MainContent = props => {
 
     return (
         <div className={ wrap }>
-            <Navbar/>
+            {/*<Navbar/>*/}
             <Content render={() => props.state.postData} />
-            <RightBar/>
+            {/*<RightBar/>*/}
         </div>
     )
 };
