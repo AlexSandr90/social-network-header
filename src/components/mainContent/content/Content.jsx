@@ -1,7 +1,7 @@
 import React from "react";
 import Posts from "./posts";
 
-import c from './content.module.css'
+import c from './content.module.css';
 
 const Content = (props) => {
 

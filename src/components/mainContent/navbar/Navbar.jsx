@@ -10,10 +10,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
     Link,
-    BrowserRouter as Router
+    BrowserRouter as Router,
+    Switch,
+    Route,
 } from "react-router-dom";
 
 import n from './navbar.module.css';
+import Profile from "../../Profile";
+import News from "../../News";
+import Messages from "../../Messages";
+import Friends from "../../Friends";
+import Photos from "../../Photos";
+import Communities from "../../Communities";
 
 const Navbar = () => {
 
@@ -39,15 +47,6 @@ const Navbar = () => {
                             My Page
                         </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/profile"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faHome} className={ icon }/>*/}
-                        {/*    <span className={ itemText }>*/}
-                        {/*        My Page*/}
-                        {/*    </span>*/}
-                        {/*</a>*/}
                     </li>
                     <li className={item}>
                         <Link to='/news' className={link}>
@@ -56,15 +55,6 @@ const Navbar = () => {
                             News
                         </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/news"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faNewspaper} className={ icon }/>*/}
-                        {/*    <span className={ itemText }>*/}
-                        {/*        News*/}
-                        {/*    </span>*/}
-                        {/*</a>*/}
                     </li>
                     <li className={item}>
                         <Link to='/messages' className={link} >
@@ -73,15 +63,6 @@ const Navbar = () => {
                                 Messages
                             </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/messages"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faEnvelopeOpenText} className={icon}/>*/}
-                        {/*    <span className={itemText}>*/}
-                        {/*        Messages*/}
-                        {/*    </span>*/}
-                        {/*</a>*/}
                     </li>
                     <li className={item}>
                         <Link to='/friends' className={link}>
@@ -90,15 +71,6 @@ const Navbar = () => {
                                 Friends
                             </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/friends"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faUserFriends} className={icon}/>*/}
-                        {/*    <span className={itemText}>*/}
-                        {/*    Friends*/}
-                        {/*</span>*/}
-                        {/*</a>*/}
                     </li>
                     <li className={item}>
                         <Link to='/photos' className={link}>
@@ -107,15 +79,6 @@ const Navbar = () => {
                                 Photos
                             </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/photos"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faCamera} className={icon}/>*/}
-                        {/*    <span className={itemText}>*/}
-                        {/*        Photos*/}
-                        {/*    </span>*/}
-                        {/*</a>*/}
                     </li>
                     <li className={item}>
                         <Link to='/communities' className={link}>
@@ -124,16 +87,27 @@ const Navbar = () => {
                                 Communities
                             </span>
                         </Link>
-                        {/*<a*/}
-                        {/*    className={link}*/}
-                        {/*    href="/communities"*/}
-                        {/*>*/}
-                        {/*    <FontAwesomeIcon icon={faUsers} className={icon}/>*/}
-                        {/*    <span className={itemText}>*/}
-                        {/*    Communities*/}
-                        {/*</span>*/}
-                        {/*</a>*/}
                     </li>
+                    {/*<Switch>*/}
+                    {/*    <Route path='/profile'>*/}
+                    {/*        <Profile/>*/}
+                    {/*    </Route>*/}
+                    {/*    <Route path='/news'>*/}
+                    {/*        <News/>*/}
+                    {/*    </Route>*/}
+                    {/*    <Route path='/messages'>*/}
+                    {/*        <Messages/>*/}
+                    {/*    </Route>*/}
+                    {/*    <Route path='/friends'>*/}
+                    {/*        <Friends/>*/}
+                    {/*    </Route>*/}
+                    {/*    <Route path='/photos'>*/}
+                    {/*        <Photos/>*/}
+                    {/*    </Route>*/}
+                    {/*    <Route path='/communities'>*/}
+                    {/*        <Communities/>*/}
+                    {/*    </Route>*/}
+                    {/*</Switch>*/}
                 </ul>
             </Router>
         </aside>
