@@ -30,7 +30,6 @@ const App = props => {
         <Router>
             <div className="App">
                 <Header />
-
                 <div className={ m.wrap }>
                     <Navbar/>
                     <Route path='/profile' component={Profile} />
@@ -41,10 +40,7 @@ const App = props => {
                     <Route path='/friends' component={Friends} />
                     <Route path='/photos' component={Photos} />
                     <Route path='/communities' component={Communities}/>
-                    <Route path='/post' >
-                        {/*<Content render={() => props.state.postData} />*/}
-                    </Route>
-                    <RightBar/>
+                                        <RightBar/>
                 </div>
                 <Footer />
             </div>

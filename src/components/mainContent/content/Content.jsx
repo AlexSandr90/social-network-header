@@ -3,7 +3,7 @@ import Posts from "./posts";
 
 import c from './content.module.css';
 
-const Content = (props) => {
+const Content = props => {
 
     const {
         content

@@ -3,7 +3,10 @@ import Post from "./post";
 import p from './posts.module.css';
 import state from "../../../../localData";
 
-import {BrowserRouter as Router} from "react-router-dom";
+import {
+    Link,
+    BrowserRouter as Router, NavLink,
+} from "react-router-dom";
 
 const Posts = () => {
 
@@ -13,9 +16,9 @@ const Posts = () => {
     return (
         <Router>
             <div className={posts}>
-                <a href='/post'>
+                <NavLink to='/post'>
                     {postItem}
-                </a>
+                </NavLink>
             </div>
         </Router>
     )

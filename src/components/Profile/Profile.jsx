@@ -2,7 +2,7 @@ import React from "react";
 
 import  p from './profile.module.scss';
 
-const Profile = () => {
+const Profile = props => {
     return (
         <aside>
             <p>

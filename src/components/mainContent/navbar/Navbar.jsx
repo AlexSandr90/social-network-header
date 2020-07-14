@@ -30,8 +30,8 @@ const Navbar = () => {
     } = n;
 
     return (
+        <Router>
         <aside className={navbar}>
-            <Router>
                 <ul className={items}>
                     <li className={item}>
                         <NavLink to='/profile' className={link}>
@@ -82,8 +82,9 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 </ul>
-            </Router>
         </aside>
+        </Router>
+
     )
 };
 
