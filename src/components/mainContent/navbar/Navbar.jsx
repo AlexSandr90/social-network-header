@@ -1,5 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 import {
     faHome,
     faUsers,
@@ -8,12 +9,9 @@ import {
     faUserFriends,
     faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
+
 import {
-    Link,
-    Route,
-    Switch,
     NavLink,
-    BrowserRouter as Router,
 } from "react-router-dom";
 
 import n from './navbar.module.css';
@@ -30,7 +28,6 @@ const Navbar = () => {
     } = n;
 
     return (
-        <Router>
         <aside className={navbar}>
                 <ul className={items}>
                     <li className={item}>
@@ -42,12 +39,12 @@ const Navbar = () => {
                         </NavLink>`
                     </li>
                     <li className={item}>
-                        <a href='/news' className={link}>
+                        <NavLink to='/news' className={link}>
                             <FontAwesomeIcon icon={faNewspaper} className={icon}/>
                             <span className={itemText}>
                                 News
                             </span>
-                        </a>
+                        </NavLink>
                     </li>
                     <li className={item}>
                         <NavLink to='/messages' className={link} >
@@ -83,8 +80,6 @@ const Navbar = () => {
                     </li>
                 </ul>
         </aside>
-        </Router>
-
     )
 };
 

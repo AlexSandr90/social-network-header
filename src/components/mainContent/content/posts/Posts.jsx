@@ -4,8 +4,7 @@ import p from './posts.module.css';
 import state from "../../../../localData";
 
 import {
-    Link,
-    BrowserRouter as Router, NavLink,
+    NavLink,
 } from "react-router-dom";
 
 const Posts = () => {
@@ -14,13 +13,11 @@ const Posts = () => {
     const postItem = state.postData.posts.map(item => <Post picture={item.picture} message={item.message} />);
 
     return (
-        <Router>
             <div className={posts}>
                 <NavLink to='/post'>
                     {postItem}
                 </NavLink>
             </div>
-        </Router>
     )
 };
 

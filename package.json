@@ -17,7 +17,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "save": "^2.4.0",
-    "v4": "0.0.1"
+    "v4": "0.0.1",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,7 +45,6 @@
   },
   "devDependencies": {
     "css-module": "^1.1.4",
-    "gh-pages": "^2.2.0",
-    "react-router-dom": "^5.2.0"
+    "gh-pages": "^2.2.0"
   }
 }

@@ -27,20 +27,23 @@ import Content from "../mainContent/content/Content";
 
 const App = props => {
     return (
+
         <Router>
             <div className="App">
                 <Header />
-                <div className={ m.wrap }>
+                <div className={m.wrap}>
                     <Navbar/>
-                    <Route path='/profile' component={Profile} />
-                    <Route path='/news' >
-                        <News render={() => props.state.postData}/>
-                    </Route>
-                    <Route path='/messages' component={Messages} />
-                    <Route path='/friends' component={Friends} />
-                    <Route path='/photos' component={Photos} />
-                    <Route path='/communities' component={Communities}/>
-                                        <RightBar/>
+                    <Switch>
+                        <Route path='/profile' component={Profile}/>
+                        <Route path='/news'>
+                            <News render={() => props.state.postData}/>
+                        </Route>
+                        <Route path='/messages' component={Messages}/>
+                        <Route path='/friends' component={Friends}/>
+                        <Route path='/photos' component={Photos}/>
+                        <Route path='/communities' component={Communities}/>
+                    </Switch>
+                    <RightBar/>
                 </div>
                 <Footer />
             </div>
