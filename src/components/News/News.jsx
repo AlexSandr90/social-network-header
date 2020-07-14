@@ -1,12 +1,14 @@
 import React from "react";
 
 import n from './news.module.scss';
+import Posts from "../mainContent/content/posts";
 
-const News = () => {
+const News = props => {
+    const {content} = n;
     return (
-        <aside>
-            News
-        </aside>
+        <section className={ content } >
+            <Posts render={() => props.state.postData} />
+        </section>
     )
 };
 

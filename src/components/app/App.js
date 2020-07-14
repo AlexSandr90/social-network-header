@@ -31,33 +31,21 @@ const App = props => {
             <div className="App">
                 <Header />
 
-                {/*<MainContent state={props.state.postData} />*/}
                 <div className={ m.wrap }>
                     <Navbar/>
-                <Switch>
                     <Route path='/profile' component={Profile} />
-                        {/*<Profile/>*/}
-                    {/*</Route>*/}
-                    <Route path='/news' component={News} />
-                        {/*<News/>*/}
-                    {/*</Route>*/}
+                    <Route path='/news' >
+                        <News render={() => props.state.postData}/>
+                    </Route>
                     <Route path='/messages' component={Messages} />
-                        {/*<Messages/>*/}
-                    {/*</Route>*/}
                     <Route path='/friends' component={Friends} />
-                        {/*<Friends/>*/}
-                    {/*</Route>*/}
                     <Route path='/photos' component={Photos} />
-                        {/*<Photos/>*/}
-                    {/*</Route>*/}
                     <Route path='/communities' component={Communities}/>
-                        {/*<Communities/>*/}
-                    {/*</Route>*/}
-                </Switch>
-                {/*    <Content render={() => props.state.postData} />*/}
-
+                    <Route path='/post' >
+                        {/*<Content render={() => props.state.postData} />*/}
+                    </Route>
+                    <RightBar/>
                 </div>
-                {/*<RightBar/>*/}
                 <Footer />
             </div>
         </Router>
