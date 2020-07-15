@@ -37,7 +37,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li className={item} >
+                    <li className={item}>
                         <NavLink to='/news' className={link} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faNewspaper} className={icon}/>
                             <span className={itemText}>
