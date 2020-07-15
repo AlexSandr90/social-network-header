@@ -3,7 +3,7 @@
 }
 
 .active {
-    color: #ff9439;
+    color: #ff9439 !important;
 }
 
 .items {

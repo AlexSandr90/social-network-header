@@ -32,15 +32,15 @@ const Navbar = () => {
         <aside className={navbar}>
                 <ul className={items}>
                     <li className={item}>
-                        <NavLink to='/profile' className={link} activeClassName={link + active}>
+                        <NavLink  exact to='/profile' className={`${link}`} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faHome} className={icon}/>
                             <span className={itemText}>
                                 My Page
                             </span>
-                        </NavLink>`
+                        </NavLink>
                     </li>
-                    <li className={item}>
-                        <NavLink to='/news' className={link}>
+                    <li className={item} >
+                        <NavLink to='/news' className={link} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faNewspaper} className={icon}/>
                             <span className={itemText}>
                                 News
@@ -48,7 +48,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className={item}>
-                        <NavLink to='/messages' className={link} >
+                        <NavLink to='/messages' className={link} activeClassName={`${link} ${active}`} >
                             <FontAwesomeIcon icon={faEnvelopeOpenText} className={icon}/>
                             <span className={itemText}>
                                 Messages
@@ -56,7 +56,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className={item}>
-                        <NavLink to='/friends' className={link}>
+                        <NavLink to='/friends' className={link} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faUserFriends} className={icon}/>
                             <span className={itemText}>
                                 Friends
@@ -64,7 +64,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className={item}>
-                        <NavLink to='/photos' className={link}>
+                        <NavLink to='/photos' className={link} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faCamera} className={icon}/>
                             <span className={itemText}>
                                 Photos
@@ -72,7 +72,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className={item}>
-                        <NavLink to='/communities' className={link}>
+                        <NavLink to='/communities' className={link} activeClassName={`${link} ${active}`}>
                             <FontAwesomeIcon icon={faUsers} className={icon}/>
                             <span className={itemText}>
                                 Communities
