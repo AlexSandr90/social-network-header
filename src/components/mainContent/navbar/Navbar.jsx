@@ -24,6 +24,7 @@ const Navbar = () => {
         icon,
         items,
         navbar,
+        active,
         itemText,
     } = n;
 
@@ -31,7 +32,7 @@ const Navbar = () => {
         <aside className={navbar}>
                 <ul className={items}>
                     <li className={item}>
-                        <NavLink to='/profile' className={link}>
+                        <NavLink to='/profile' className={link} activeClassName={link + active}>
                             <FontAwesomeIcon icon={faHome} className={icon}/>
                             <span className={itemText}>
                                 My Page

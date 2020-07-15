@@ -2,6 +2,10 @@
     grid-area: navbar;
 }
 
+.active {
+    color: #ff9439;
+}
+
 .items {
     list-style-type: none;
     margin: 15px auto;
