@@ -1,9 +1,14 @@
 .dialogs {
-
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr;
+    margin: 20px;
 }
 
 .messageItems {
-
+    display: grid;
+    color: red;
+    max-height: 50px;
 }
 
 .messages {
@@ -15,5 +20,5 @@
 }
 
 .active {
-
+    color: gold;
 }
