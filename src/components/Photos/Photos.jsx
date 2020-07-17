@@ -4,7 +4,7 @@ import ph from './photos.module.scss';
 
 const Photos = () => {
     return (
-        <div>
+        <div className={ph.photoContainer}>
             Photos
         </div>
     )

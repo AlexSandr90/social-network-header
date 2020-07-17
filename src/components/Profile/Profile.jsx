@@ -32,6 +32,6 @@ const profileItem = state.profileData.profile.map(item => (
     )
 );
 
-const Profile = () => <article>{profileItem}</article>;
+const Profile = () => <article className={p.profileItems}>{profileItem}</article>;
 
 export default Profile;

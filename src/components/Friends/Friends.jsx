@@ -4,7 +4,7 @@ import f from './friends.module.scss';
 
 const Friends = () => {
     return (
-        <div>
+        <div className={f.friendsContainer}>
             Friends
         </div>
     )

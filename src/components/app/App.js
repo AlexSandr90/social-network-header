@@ -28,7 +28,7 @@ const App = props => {
         <Router>
             <div className="App">
                 <Header/>
-                <div className={m.wrap}>
+                <section className={m.wrap}>
                     <Navbar/>
                     <Switch>
                         <Route path='/profile'>
@@ -45,7 +45,7 @@ const App = props => {
                         <Route path='/communities' component={Communities}/>
                     </Switch>
                     <RightBar/>
-                </div>
+                </section>
                 <Footer/>
             </div>
         </Router>

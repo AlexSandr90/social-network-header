@@ -6,7 +6,7 @@ import Message from "./Message/Message";
 
 
 const dialogsElements = state.dialogsData.dialogs.map(item => <MessageItem name={item.name} id={item.id} />);
-const messagesElements = state.dialogsData.messages.map(item => <Message message={item.message} />);
+const messagesElements = state.dialogsData.messages.map(item => <Message message={item.message} id={item.id} />);
 
 const Messages = () => {
     const {

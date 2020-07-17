@@ -28,8 +28,8 @@ const Navbar = () => {
 
                 <ul className={items}>
 
-                    <li className={item}>
-                        <NavLink  exact to='/profile' className={`${link}`} activeClassName={`${link} ${active}`}>
+                    <li className={item} >
+                        <NavLink exact to='/profile' className={`${link}`} activeClassName={`${link} ${active}`} key={1}>
                             <FontAwesomeIcon icon={faHome} className={icon}/>
                             <span className={itemText}>
                                 My Page
@@ -37,8 +37,8 @@ const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li className={item}>
-                        <NavLink to='/news' className={link} activeClassName={`${link} ${active}`}>
+                    <li className={item} >
+                        <NavLink exact to='/news' className={link} activeClassName={`${link} ${active}`} key={2}>
                             <FontAwesomeIcon icon={faNewspaper} className={icon}/>
                             <span className={itemText}>
                                 News
@@ -46,8 +46,8 @@ const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li className={item}>
-                        <NavLink to='/messages' className={link} activeClassName={`${link} ${active}`} >
+                    <li className={item} >
+                        <NavLink exact to='/messages' className={link} activeClassName={`${link} ${active}`} key={3}>
                             <FontAwesomeIcon icon={faEnvelopeOpenText} className={icon}/>
                             <span className={itemText}>
                                 Messages
@@ -55,8 +55,8 @@ const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li className={item}>
-                        <NavLink to='/friends' className={link} activeClassName={`${link} ${active}`}>
+                    <li className={item} >
+                        <NavLink exact to='/friends' className={link} activeClassName={`${link} ${active}`} key={4}>
                             <FontAwesomeIcon icon={faUserFriends} className={icon}/>
                             <span className={itemText}>
                                 Friends
@@ -65,7 +65,7 @@ const Navbar = () => {
                     </li>
 
                     <li className={item}>
-                        <NavLink to='/photos' className={link} activeClassName={`${link} ${active}`}>
+                        <NavLink exact to='/photos' className={link} activeClassName={`${link} ${active}`} key={5}>
                             <FontAwesomeIcon icon={faCamera} className={icon}/>
                             <span className={itemText}>
                                 Photos
@@ -73,8 +73,8 @@ const Navbar = () => {
                         </NavLink>
                     </li>
 
-                    <li className={item}>
-                        <NavLink to='/communities' className={link} activeClassName={`${link} ${active}`}>
+                    <li className={item} >
+                        <NavLink to='/communities' className={link} activeClassName={`${link} ${active}`} key={6}>
                             <FontAwesomeIcon icon={faUsers} className={icon}/>
                             <span className={itemText}>
                                 Communities

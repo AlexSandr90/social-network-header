@@ -4,7 +4,7 @@ import c from './communities.module.scss';
 
 const Communities = () => {
     return (
-        <div>
+        <div className={c.communitiesContainer}>
             Communities
         </div>
     )
