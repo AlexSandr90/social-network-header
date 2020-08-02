@@ -1,7 +1,7 @@
 import React from "react";
 
 import n from './news.module.scss';
-import Posts from "../mainContent/content/posts";
+import Posts from "../MainContent/content/posts";
 
 const News = props => {
     const {content} = n;

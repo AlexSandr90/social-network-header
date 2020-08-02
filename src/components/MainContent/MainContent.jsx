@@ -1,9 +1,9 @@
 import React from "react";
 
 import m from './mainContent.module.css'
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import Content from "./content/Content";
-import RightBar from "./rightBar";
+import RightBar from "./RightBar";
 import News from "../News";
 
 

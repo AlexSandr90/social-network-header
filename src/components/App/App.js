@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "../header";
-import Footer from "../footer";
+import Header from "../Header";
+import Footer from "../Footer";
 
 import '../../cssVariables/variables.css'
 import './App.css';
@@ -18,9 +18,9 @@ import Friends from "../Friends";
 import Profile from "../Profile";
 import Messages from "../Messages";
 import Communities from "../Communities";
-import m from '../mainContent/mainContent.module.css'
-import Navbar from "../mainContent/navbar";
-import RightBar from "../mainContent/rightBar";
+import m from '../MainContent/mainContent.module.css'
+import Navbar from "../MainContent/Navbar";
+import RightBar from "../MainContent/RightBar";
 
 
 const App = props => {
